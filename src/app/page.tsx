@@ -138,6 +138,101 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* For Teams Section */}
+      <section id="teams" className={styles.teams}>
+        <div className={styles.teamsHeader}>
+          <h2 className={styles.teamsTitle}>Loved by the whole team.</h2>
+          <p className={styles.teamsText}>Folio adapts to your company structure, making life easier for everyone.</p>
+        </div>
+        
+        <div className={styles.teamGrid}>
+          <div className={styles.teamRole}>
+            <div className={styles.roleTag}>For Employees</div>
+            <h3 className={styles.roleTitle}>Book time off in seconds</h3>
+            <p className={styles.roleText}>No more confusing spreadsheets or legacy HR tools. See your balance, select your dates, and you're done.</p>
+          </div>
+          <div className={styles.teamRole}>
+            <div className={styles.roleTag}>For Managers</div>
+            <h3 className={styles.roleTitle}>Approve from anywhere</h3>
+            <p className={styles.roleText}>Get pinged in Slack or Email. Review overlapping leaves instantly and approve with a single tap.</p>
+          </div>
+          <div className={styles.teamRole}>
+            <div className={styles.roleTag}>For HR</div>
+            <h3 className={styles.roleTitle}>Automated compliance</h3>
+            <p className={styles.roleText}>Accruals, roll-overs, and local holidays are calculated automatically. Export reports for payroll in one click.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className={styles.pricing}>
+        <div className={styles.pricingHeader}>
+          <h2 className={styles.pricingTitle}>Simple, transparent pricing.</h2>
+          <p className={styles.pricingText}>Start for free, upgrade when you need to.</p>
+        </div>
+
+        <div className={styles.pricingCards}>
+          <div className={styles.pricingCard}>
+            <h3 className={styles.planName}>Starter</h3>
+            <div className={styles.planPrice}>$0<span>/mo</span></div>
+            <p className={styles.planDesc}>Perfect for small teams getting started.</p>
+            <ul className={styles.planFeatures}>
+              <li>Up to 10 users</li>
+              <li>Basic time off policies</li>
+              <li>Slack & Email integrations</li>
+              <li>Community support</li>
+            </ul>
+            <button className={styles.planBtn}>Get Started</button>
+          </div>
+          
+          <div className={`${styles.pricingCard} ${styles.pricingCardFeatured}`}>
+            <div className={styles.popularBadge}>Most Popular</div>
+            <h3 className={styles.planName}>Pro</h3>
+            <div className={styles.planPrice}>$4<span>/user/mo</span></div>
+            <p className={styles.planDesc}>Everything you need for growing companies.</p>
+            <ul className={styles.planFeatures}>
+              <li>Unlimited users</li>
+              <li>Custom policies & accruals</li>
+              <li>HRIS integrations</li>
+              <li>Priority support</li>
+            </ul>
+            <button className={`${styles.planBtn} ${styles.planBtnFeatured}`}>Start Free Trial</button>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className={styles.footer}>
+        <div className={styles.footerContent}>
+          <div className={styles.footerBrand}>
+            <span className={`${styles.logo} ${styles.footerLogo}`}>Folio.</span>
+            <p className={styles.footerDesc}>Time off, beautifully managed.</p>
+          </div>
+          <div className={styles.footerLinks}>
+            <div className={styles.footerColumn}>
+              <h4>Product</h4>
+              <a href="#features">Features</a>
+              <a href="#teams">For Teams</a>
+              <a href="#pricing">Pricing</a>
+            </div>
+            <div className={styles.footerColumn}>
+              <h4>Company</h4>
+              <a href="#">About Us</a>
+              <a href="#">Careers</a>
+              <a href="#">Contact</a>
+            </div>
+            <div className={styles.footerColumn}>
+              <h4>Legal</h4>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+          </div>
+        </div>
+        <div className={styles.footerBottom}>
+          <p>&copy; {new Date().getFullYear()} Folio. All rights reserved.</p>
+        </div>
+      </footer>
     </div>
   );
 }

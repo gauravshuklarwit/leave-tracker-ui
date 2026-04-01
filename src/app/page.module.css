@@ -486,3 +486,353 @@
     flex-direction: column;
   }
 }
+
+/* Teams Section */
+.teams {
+  padding: 8rem 4vw;
+  background-color: var(--sand-50);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 3;
+}
+
+.teamsHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.teamsTitle {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--sage-900);
+  margin-bottom: 1rem;
+}
+
+.teamsText {
+  font-size: 1.2rem;
+  color: var(--sage-800);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.teamRole {
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(214, 224, 206, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.teamRole:hover {
+  transform: translateY(-5px);
+}
+
+.roleTag {
+  display: inline-block;
+  background: rgba(217, 138, 124, 0.1);
+  color: var(--clay-500);
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.roleTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--sage-900);
+  margin-bottom: 1rem;
+}
+
+.roleText {
+  font-size: 1.05rem;
+  color: var(--sage-800);
+  line-height: 1.6;
+}
+
+/* Pricing Section */
+.pricing {
+  padding: 8rem 4vw;
+  background-color: var(--sand-100);
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 4;
+}
+
+.pricingHeader {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.pricingTitle {
+  font-family: var(--font-display);
+  font-size: 4rem;
+  color: var(--sage-900);
+  margin-bottom: 1rem;
+}
+
+.pricingText {
+  font-size: 1.2rem;
+  color: var(--sage-800);
+}
+
+.pricingCards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pricingCard {
+  flex: 1;
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(214, 224, 206, 0.3);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.pricingCardFeatured {
+  background: var(--sage-900);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 20px 50px rgba(26, 33, 22, 0.15);
+  border: none;
+}
+
+.popularBadge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--clay-500);
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.planPrice {
+  font-size: 3.5rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+.pricingCard .planName,
+.pricingCard .planPrice {
+  color: var(--sage-900);
+}
+
+.pricingCardFeatured .planName,
+.pricingCardFeatured .planPrice {
+  color: white;
+}
+
+.planPrice span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--sage-800);
+  font-family: var(--font-body);
+}
+
+.pricingCardFeatured .planPrice span {
+  color: var(--sage-200);
+}
+
+.planDesc {
+  font-size: 1.05rem;
+  color: var(--sage-800);
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(214, 224, 206, 0.5);
+}
+
+.pricingCardFeatured .planDesc {
+  color: var(--sage-200);
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.planFeatures {
+  list-style: none;
+  margin-bottom: 3rem;
+  flex: 1;
+}
+
+.planFeatures li {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.05rem;
+  color: var(--sage-800);
+}
+
+.pricingCardFeatured .planFeatures li {
+  color: var(--sand-50);
+}
+
+.planFeatures li::before {
+  content: "✓";
+  color: var(--clay-500);
+  font-weight: bold;
+}
+
+.planBtn {
+  width: 100%;
+  background: white;
+  color: var(--sage-900);
+  border: 1px solid var(--sage-300);
+  padding: 1rem;
+  border-radius: 100px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.planBtn:hover {
+  border-color: var(--sage-900);
+  background: rgba(214, 224, 206, 0.2);
+}
+
+.planBtnFeatured {
+  background: var(--clay-500);
+  color: white;
+  border: none;
+}
+
+.planBtnFeatured:hover {
+  background: var(--clay-400);
+  transform: translateY(-2px);
+}
+
+/* Footer Section */
+.footer {
+  background-color: var(--sage-900);
+  color: var(--sand-50);
+  padding: 6rem 4vw 2rem;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  margin-top: -3rem;
+  position: relative;
+  z-index: 5;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto 4rem;
+  flex-wrap: wrap;
+}
+
+.footerBrand {
+  max-width: 300px;
+}
+
+.footerLogo {
+  color: var(--sand-50) !important;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.footerDesc {
+  color: var(--sage-200);
+  font-size: 1.05rem;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerColumn h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.footerColumn a {
+  color: var(--sage-200);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footerColumn a:hover {
+  color: white;
+}
+
+.footerBottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  color: var(--sage-300);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .teamGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .teamGrid {
+    grid-template-columns: 1fr;
+  }
+  .teamsTitle, .pricingTitle {
+    font-size: 3rem;
+  }
+  .pricingCards {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .pricingCardFeatured {
+    transform: scale(1);
+  }
+  .footerContent {
+    flex-direction: column;
+  }
+  .footerLinks {
+    gap: 2rem;
+    flex-direction: column;
+  }
+}
