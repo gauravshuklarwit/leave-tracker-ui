@@ -1,16 +1,17 @@
 import React from 'react';
+import Link from 'next/link';
 import styles from "@/app/page.module.css";
 
 export const Navbar = () => {
   return (
     <nav className={styles.nav}>
-      <a href="/" className={styles.logo}>Folio.</a>
+      <Link href="/" className={styles.logo}>Folio.</Link>
       <div className={styles.navLinks}>
-        <a href="#features" className={styles.navLink}>Features</a>
-        <a href="#teams" className={styles.navLink}>For Teams</a>
-        <a href="#pricing" className={styles.navLink}>Pricing</a>
+        <Link href="#features" className={styles.navLink}>Features</Link>
+        <Link href="#teams" className={styles.navLink}>For Teams</Link>
+        <Link href="#pricing" className={styles.navLink}>Pricing</Link>
       </div>
-      <a href="/login" className={styles.navButton}>Get Started</a>
+      <Link href="/sign-in" className={styles.navButton}>Sign In</Link>
     </nav>
   );
 };
